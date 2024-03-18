@@ -21,36 +21,38 @@
   <main>
     <img src="marissa-grootes-flRm0z3MEoA-unsplash.jpg" alt="schedule table img">
     <div class="main">
-      <h1>Get Started</h1>
+
+
+      <form id="contact" action="./" method="post">
+      <h1>Get Started - <em>Sign Up Now!</em></h1>
       <fieldset class="form-grid">
         <div class="name">
         <label for="first-name">First Name</label>
-        <input type="first-name" id="first-name" required>
-        <label for="lasst-name">Last Name</label>
-        <input type="last-name" id="last-name" required>
+        <input type="text" id="first-name" name="first-name" placeholder="Anna" required>
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" placeholder="Example" required>
       </div>
         <div>
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
-          <label for="tel">Phone</label>
-          <input type="tel" autocomplete="tel" id="tel" name="tel" />
+          <input type="email" id="email" name="email" placeholder="annaexample@email.com" required />
+
+          <label for="phone_number">Phone</label>
+          <input type="phone_number" id="phone_number" name="phone_number" placeholder="0123456789" />
+
         </div>
         <div>
-          <label for="password">
-            <span>Password</span>
-            <strong><span aria-label="required">*</span></strong>
-          </label>
+          <label for="password">Password</label>
           <input type="password" id="password" name="password" required />
-          <label for="confirm">Confirm Password
-            <strong><span aria-label="required">*</span></strong>
-          </label>
+          <label for="confirm">Confirm Password</label>
           <input type="password" id="password" name="password" required />
         </div>
         <p>
           <button type="submit">Create Account</button>
           </br>Already have an account? <a href="#">Log in</a>
         </p>
-    </fieldset>
+      </fieldset>
+    </form>
     </div>
   </main>
   <footer>

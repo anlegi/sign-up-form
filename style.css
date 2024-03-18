@@ -1,6 +1,6 @@
 img {
   width: 50%;
-  height: 100%;
+  height: 80%;
   border-radius: 3px;
 }
 
@@ -21,20 +21,43 @@ h1 {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: rgb(64, 64, 64);
   font-size: 27px;
+  margin-left: 70px;
 }
+
+em {
+  color: rgb(173, 173, 173);
+}
+
 fieldset {
-  width: 70%;
+  /* width: 70%;
+  height: 300px; */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 15px;
   padding: 45px;
   border-radius: 3px;
+  background-color: rgb(243, 243, 243);
+  border: none;
+  box-shadow: 2px 2px rgb(210, 210, 210);
+  margin-bottom: 130px;
+  margin-left: 70px;
 }
 
 button {
   margin-bottom: 5px;
   margin-top: 2px;
-  padding: 5px;
+  padding: 6px;
+  color: rgb(82, 80, 80);
+  border: solid rgb(200, 200, 200);
+  border-radius: 3px;
+  background-color: rgb(214, 214, 214);
+  font-size: 14px;
 }
+
+button:hover {
+  background-color: rgb(230, 228, 228);
+  cursor: pointer;
+}
+
 
 .form-grid {
   display: grid;
@@ -93,10 +116,7 @@ header {
   color: black;
 }
 
-.header a.active {
-  background-color: rgb(199, 199, 199);
-  color: white;
-}
+
 
 .header-right {
   float: right;
@@ -121,4 +141,44 @@ a:hover {
 
 footer>p {
   color: rgb(94, 94, 94);
+}
+
+
+input:invalid {
+  border: 1px solid #ddbfc0;
+  background-color: rgba(255, 170, 171, 0.25);
+}
+
+input:focus:invalid {
+  background-color: transparent;
+  transition: none;
+  border: 1px solid #cff4a6;
+  color: #D6D9DC;
+}
+
+input:focus:valid {
+  background-color: transparent;
+  transition: none;
+  border: 1px solid #203507;
+  color: #D6D9DC;
+}
+
+input:valid {
+  border: 1px solid #cff4a6;
+  background-color: rgba(139, 195, 74, 0.25);
+}
+
+
+input:placeholder-shown, input[type="password"] {
+  background-color: transparent;
+  border: 1px solid #cbcbcb;
+  border-radius: 3px;
+  height: 25px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+
+input::placeholder {
+  color: #929191;
 }
